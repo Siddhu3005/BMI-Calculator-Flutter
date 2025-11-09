@@ -1,0 +1,29 @@
+# ----------------------------
+# 🦋 Flutter Project Linguist Fix
+# ----------------------------
+# Tells GitHub Linguist to ignore platform and build folders
+# so Dart shows as the main language.
+# ----------------------------
+
+# Ignore native platform folders
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+linux/** linguist-vendored
+windows/** linguist-vendored
+
+# Ignore build outputs
+build/** linguist-vendored
+
+# Ignore web boilerplate
+web/** linguist-vendored
+
+# Keep Dart visible
+lib/** linguist-detectable=true
+
+# Ignore test or generated files
+test/** linguist-vendored
+*.g.dart linguist-vendored
+
+# Ignore lock files
+pubspec.lock linguist-vendored
